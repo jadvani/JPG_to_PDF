@@ -24,5 +24,16 @@ def export_to_pdf(pdfFileName, listPages, dir = ''):
 
     pdf.output(dir + pdfFileName + ".pdf", "F")
     
-def export_to_pdf_app(images,pdfFileName):
+def export_to_pdf_app(files,pdfFileName, dir = ''):
+    if (dir):
+        dir += "/"    
+    cover = Image.open(files[0])
+    width, height = cover.size
+    pdf = FPDF(unit = "pt", format = [width, height])
+    for page in files:
+        pdf.add_page()
+        pdf.image(page, 0, 0)
+
+    pdf.output(dir + pdfFileName + ".pdf", "F")
+        
     

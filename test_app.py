@@ -7,12 +7,15 @@ Created on Fri Jan  8 17:35:50 2021
 import tkinter
 from tkinterdnd2 import *
 import tkinterdnd2
-
+from export_to_pdf import export_to_pdf_app
 def drop(event):
     entry_sv.set(event.data)
 
 root = tkinterdnd2.Tk(className='- JPG to PDF - ')
 root.geometry("500x300")
+root.wm_iconbitmap('logo.ico')
+
+root.iconbitmap(r'logo.ico')
 var = tkinter.IntVar()
 a = tkinter.Label(root, text="PDF result path")
 a.place(x=10, y=50)
@@ -28,9 +31,12 @@ entry.drop_target_register(DND_FILES)
 entry.dnd_bind('<<Drop>>', drop)
 entry2 = tkinter.Entry(root, textvar=entry2_sv, width=50)
 entry2.place(x=100, y=50)
-print("waiting...")
+
 button.wait_variable(var)
-print("done waiting.")
-print(entry_sv.get())
-print(entry2.get())
+
+files = entry_sv.get().split(" ")
+pdf_path = entry2.get()
+export_to_pdf_app(files,pdf_path)
+a2 = tkinter.Label(root, text=" File(s) converted!")
+a2.place(x=130, y=100)
 root.mainloop()
