@@ -31,7 +31,7 @@ def drop(event):
 
 root = tkinterdnd2.Tk(className='- JPG to PDF - ')
 root.geometry("500x300")
-root.wm_iconbitmap('logo.ico')
+root.wm_iconbitmap('img/logo.ico')
 
 var = tkinter.IntVar()
 a = tkinter.Label(root, text="PDF path")
