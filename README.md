@@ -8,6 +8,9 @@ This is a Python3-based app created using Tkinter to join and convert JPG files 
 My old Samsung Laser Multifunction Printer scan images as single JPG images only. I use to scan lots of handwritten documents and I needed a tool to convert and classify these documents faster. It is well known that there are already some free web converters for this purpose, but these are limited to convert up to 5 or 10 pages each time, and you are not aware about the treatment they do to your information. It was also a good opportunity to get familiar with interface development using Python. instead of Qt Creator + C++. the only other framework I have ever used for these. 
 
 With less than 65 lines of code in a single script, you will be able to run the converter and use it as many times as required. The execution finishes once you simply close the window!
+
+
+
 ![screenshot](https://github.com/jadvani/JPG_to_PDF/blob/main/img/screenshot_app.png?style=centerme)
  
  
