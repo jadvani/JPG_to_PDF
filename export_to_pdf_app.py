@@ -2,20 +2,8 @@
 """
 Created on Tue Jan 19 22:14:28 2021
 
-# @author: Javier
+# @author: Javier Advani
 # """
-# import tkinter as tk
-# root = tk.Tk()
-# ...
-# var = tk.IntVar()
-# button = tk.Button(root, text="Click Me", command=lambda: var.set(1))
-# button.place(relx=.5, rely=.5, anchor="c")
-
-# print("waiting...")
-# button.wait_variable(var)
-# print("done waiting.")
-# root.destroy()
-
 
 import tkinter
 from tkinter import messagebox
@@ -23,10 +11,10 @@ import tkinterdnd2
 from fpdf import FPDF
 from PIL import Image
 
+def format_files_as_list(files_received):
+    return files_received.get().replace("{","").replace("}","").split(" ")
 
 def export_to_pdf_app(files,pdfFileName, dir = ''):
-    files = files.get().split(" ")
-    pdfFileName = pdfFileName.get()
     if (dir):
         dir += "/"    
     cover = Image.open(files[0])
@@ -51,6 +39,7 @@ a.place(x=10, y=50)
 a0 = tkinter.Label(root, text=" ↑ Drop JPG files over the field above shown ↑")
 a0.place(x=130, y=25)
 entry_sv = tkinter.StringVar()
+
 entry2_sv = tkinter.StringVar()
 entry = tkinter.Entry(root, textvar=entry_sv, width=50)
 entry.pack(fill=tkinter.X)
@@ -63,7 +52,7 @@ def convert_to_pdf():
    if(not entry_sv.get().strip() or not entry2.get().strip()):
        messagebox.showerror( "Error", "Please, drop the image file(s) to convert and its resulting PDF file name")
    else:
-       export_to_pdf_app(entry_sv,entry2, dir = '')
+       export_to_pdf_app(format_files_as_list(entry_sv),entry2.get(), dir = '')
        messagebox.showinfo( "- JPG to PDF - ", "File has been successfully created!")
 
 
