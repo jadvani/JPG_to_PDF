@@ -1,6 +1,6 @@
 # JPG_to_PDF
 
-![screenshot](https://github.com/jadvani/JPG_to_PDF/blob/master/img/)
+![screenshot](https://github.com/jadvani/JPG_to_PDF/blob/main/img/screenshot_app.png)
  
  
 This is a Python3-based app created using Tkinter to join and convert JPG files to PDF.
