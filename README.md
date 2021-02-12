@@ -1,4 +1,4 @@
-# JPG_to_PDF
+# JPG Images to PDF: convert JPG files to PDF with a simple click!
 
 ![screenshot](https://github.com/jadvani/JPG_to_PDF/blob/main/img/screenshot_app.png)
  
@@ -13,7 +13,7 @@ These dependencies must be installed for its usage:
 * fpdf
 
  
- export the app as an .exe windows file using this command (pynstaller library must be available too for that):
+Export the app as an .exe windows file using this command (pynstaller library must be available too for that):
 pyinstaller --onefile --icon=logo.ico --noconsole test_app2.py
 
 
