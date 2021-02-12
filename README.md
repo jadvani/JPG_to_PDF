@@ -3,7 +3,7 @@
 
 This is a Python3-based app created using Tkinter to join and convert JPG files to PDF.
 
-### Why did I created this app?
+### Why did I create this app?
 
 My old Samsung Laser Multifunction Printer scan images as single JPG images only. I use to scan lots of handwritten documents and I needed a tool to convert and classify these documents faster. It is well known that there are already some free web converters for this purpose, but these are limited to convert up to 5 or 10 pages each time, and you are not aware about the treatment they do to your information. It was also a good opportunity to get familiar with interface development using Python. instead of Qt Creator + C++. the only other framework I have ever used for these. 
 
