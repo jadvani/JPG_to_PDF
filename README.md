@@ -11,7 +11,7 @@ With less than 65 lines of code in a single script, you will be able to run the 
 
 
 
-![screenshot](https://github.com/jadvani/JPG_to_PDF/blob/main/img/screenshot_app.png?style=centerme)
+![screenshot](https://github.com/jadvani/JPG_to_PDF/blob/main/img/screenshot_app.png)
  
  
 These dependencies must be installed for its usage:
