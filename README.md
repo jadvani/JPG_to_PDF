@@ -29,6 +29,6 @@ pyinstaller --onefile --icon=logo.ico --noconsole test_app2.py
 TODO:
 
 * Add a button to choose the input files from path too (not the drag & drop way only).
-~~* Add a button to choose the file output path~~
+* ~~Add a button to choose the file output path~~
 * improve the UX design somehow, add a background image to the interface maybe (?).
 
